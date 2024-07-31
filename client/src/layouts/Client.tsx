@@ -10,12 +10,23 @@ const HomePage = () => {
       <Header />
       <Banner />
       <Container>
-        
-        <ProductListHome _id={""} name={""} image={""} category={""} price={0} brand={""} description={""}/>
+        <ProductListHome
+          _id={""}
+          name={""}
+          image={""}
+          category={{
+            _id: "",
+            name: "",
+            description: "",
+          }}
+          price={0}
+          brand={""}
+          description={""}
+        />
       </Container>
-      <Footer/>
+      <Footer />
     </div>
   );
-}
+};
 
 export default HomePage;

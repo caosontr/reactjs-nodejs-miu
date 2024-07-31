@@ -9,7 +9,7 @@ import HomePage from "./layouts/Client.tsx";
 import AdminPage from "./layouts/Admin.tsx";
 import ProductDetail from "./pages/clients/ProductDetail.tsx";
 import EditProduct from "./pages/admin/product/EditProduct.tsx";
-import ProtectRouter from "./ProtectRouter.tsx";
+import ProtectRouter from "./services/ProtectRouter.tsx";
 import ListCategory from "./pages/admin/category/ListCategory.tsx";
 
 const router = createBrowserRouter([

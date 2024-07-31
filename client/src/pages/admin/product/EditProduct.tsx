@@ -1,14 +1,26 @@
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Container, TextField, Button, Box, Typography, CircularProgress } from "@mui/material";
+import {
+  Container,
+  TextField,
+  Button,
+  Box,
+  Typography,
+  CircularProgress,
+} from "@mui/material";
 import { getProduct, updateProduct } from "../../../services/product";
 import { ProductFormValue } from "../../../types/Product";
 
 const ProductEditForm = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { register, handleSubmit, setValue, formState: { errors } } = useForm<ProductFormValue>();
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    formState: { errors },
+  } = useForm<ProductFormValue>();
   const [loading, setLoading] = useState<boolean>(true);
   const [saving, setSaving] = useState<boolean>(false);
 
